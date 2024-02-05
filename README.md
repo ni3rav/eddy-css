@@ -13,8 +13,7 @@ i will make it available on cdn very soon.
 <br>
 
 ## 💡 Usage
-just checkout it's demo from <a href="./main.html">here</a><br>
-if you like it then use it like a normal css file :)
+use it like a normal css file :)
 
 ## ⏩ Change Log
 right now it is in initial phase
