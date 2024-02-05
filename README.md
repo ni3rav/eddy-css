@@ -12,9 +12,6 @@ as of now you can download *eddy-css-initial-release.zip* from releases then ext
 i will make it available on cdn very soon.
 <br>
 
-## 💡 Usage
-use it like a normal css file :)
-
 ## ⏩ Change Log
 right now it is in initial phase
 View [CHANGELOG.md](CHANGELOG.md) for more information.
