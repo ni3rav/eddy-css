@@ -1,1 +1,4 @@
-well it is in intial stage right now so nothing new in here :]
+
+06th February:
+v1.0.1:
+- Added styling for table, code, blockquote tag
