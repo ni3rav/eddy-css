@@ -18,7 +18,13 @@
 
 ### ⏩ Change Log:
 
-- The micro-library is currently in the initial phase, and you can view the detailed changes in the CHANGELOG.md file.
+- Check CHANGELOG.md for more informations.
+
+### 🙏 Credits:
+
+- <a link="https://github.com/necolas/normalize.css/"> Normalise.css </a> for the base code
+- <a link="https://github.com/kevquirk/simple.css"> Simple.css</a> for table's styling
+- <a link="https://github.com/githubnext/monaspace"> GithubNext </a> for MonospaceNeon fonts 
 
 ### 📄 License:
 
