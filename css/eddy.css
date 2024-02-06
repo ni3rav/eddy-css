@@ -82,6 +82,57 @@ h6 {
    
 */
 
+/* Format tables taken from simple.css*/
+table {
+    border-collapse: collapse;
+    border: solid 1px;
+    margin: 1.5rem 0;
+}
+
+figure>table {
+    width: max-content;
+}
+
+td,
+th {
+    border: 1px solid var(--border);
+    text-align: start;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: var(--accent-bg);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    /* Set every other cell slightly darker. Improves readability. */
+    background-color: var(--accent-bg);
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* blockquote styling from simple.css */
+blockquote {
+    margin-inline-start: 2rem;
+    margin-inline-end: 0;
+    margin-block: 2rem;
+    padding: 0.4rem 0.8rem;
+    border-inline-start: 0.35rem solid var(--accent);
+    color: var(--text-light);
+    font-style: italic;
+}
+
+code {
+    background: #0c1028;
+    color: #388659;
+    padding: 5px;
+    border-radius: 6px;
+}
+
 button,
 input,
 optgroup,
@@ -133,9 +184,7 @@ hr {
     background-color: #ffffff;
 }
 
-table {
-    border: 1px solid #ffffff;
-}
+
 
 th {
     font-weight: bolder;
