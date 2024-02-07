@@ -18,8 +18,6 @@
 - paste the following code in the head section of your html file and you are good to go
 - ```<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css">```
 
-- ### alternatively you can clone the repo and link *./eddy-css/css/eddy-min.css* to your html file
-
 ### ⏩ Change Log:
 
 - Check CHANGELOG.md for more informations.
