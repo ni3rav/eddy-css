@@ -12,9 +12,9 @@
 ### ⚡️ Installation:
 
 - paste either of the following code in the head section of your html file and you are good to go
-<code><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></code>
+<blockquote><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></blockquote>
 <center>or</center>
-<code><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></code>
+<blockquote><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></blockquote>
 
 - alternatively you can clone the repo and link *./eddy-css/css/eddy-min.css* to your html file
 
@@ -24,7 +24,7 @@
 
 ### 🙏 Credits:
 
-- <a link="https://github.com/necolas/normalize.css/"> Normalise.css </a> for the base code
+- <a link="https://github.com/necolas/normalize.css/"> Normalise.css </a> for the base blockquote
 - <a link="https://github.com/kevquirk/simple.css"> Simple.css</a> for table's styling
 - <a link="https://github.com/githubnext/monaspace"> GithubNext </a> for MonospaceNeon fonts 
 
