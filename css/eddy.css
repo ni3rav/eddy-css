@@ -301,10 +301,12 @@ pre {
 
 a {
     background-color: transparent;
+    
 }
 
 a:link {
     color: #FFC800;
+    text-decoration: none;
 }
 
 a:visited {
