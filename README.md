@@ -1,3 +1,7 @@
+### <h3>eddy.CSS<h3>
+
+<hr>
+
 ### ✨ Features:
 
 1. **Written in Vanilla CSS:**
