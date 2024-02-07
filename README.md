@@ -12,9 +12,9 @@
 ### ⚡️ Installation:
 
 - paste either of the following code in the head section of your html file and you are good to go
-<blockquote><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></blockquote>
-<center>or</center>
-<blockquote><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></blockquote>
+<code>"<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css">"</code>
+
+<code>"<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css">"</code>
 
 - alternatively you can clone the repo and link *./eddy-css/css/eddy-min.css* to your html file
 
