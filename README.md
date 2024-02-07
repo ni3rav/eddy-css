@@ -11,18 +11,23 @@
 
 ### ⚡️ Installation:
 
-- Download the initial release (eddy-css-initial-release.zip) from the "releases" section.
-- Extract the downloaded file on your machine.
-- Link the `./css/eddy-min.css` file to your HTML file.
-- The micro-library is expected to be available on a CDN soon for easier access.
+- paste either of the following code in the head section of your html file and you are good to go
+- ```<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css">```
+- ```<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css">```
+
+- ### alternatively you can clone the repo and link *./eddy-css/css/eddy-min.css* to your html file
 
 ### ⏩ Change Log:
 
-- The micro-library is currently in the initial phase, and you can view the detailed changes in the CHANGELOG.md file.
+- Check CHANGELOG.md for more informations.
+
+### 🙏 Credits:
+
+- <a link="https://github.com/necolas/normalize.css/"> Normalize.css </a> for the base code
+- <a link="https://github.com/kevquirk/simple.css"> Simple.css</a> for table's styling
+- <a link="https://github.com/githubnext/monaspace"> GithubNext </a> for MonospaceNeon fonts 
 
 ### 📄 License:
 
 - The micro-library is licensed under the MIT license.
 - Refer to the LICENSE file for more details.
-
-This adjustment reflects the terminology change from "framework" to "micro-library." If you have any more questions or if there's anything else you'd like to modify, feel free to let me know!
