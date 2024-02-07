@@ -306,18 +306,22 @@ a {
 
 a:link {
     color: #FFC800;
+    text-decoration: none !important;
 }
 
 a:visited {
     color: #A44A3F;
+    text-decoration: none !important;
 }
 
 a:hover {
     color: #FCFC62;
+    text-decoration: none !important;
 }
 
 a:active {
     color: #E8C547;
+    text-decoration: none !important;
 }
 
 /**
