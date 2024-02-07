@@ -89,18 +89,22 @@ table {
     margin: 1.5rem 0;
 }
 
+
 figure>table {
     width: max-content;
 }
 
 td,
 th {
-    border: 1px solid var(--border);
+    border-collapse: collapse;
+    border: 1px solid #ffffff;
     text-align: start;
     padding: 0.5rem;
 }
 
 th {
+    font-family: MonospaceNeonBold;
+    border-collapse: collapse;
     background-color: var(--accent-bg);
     font-weight: bold;
 }
@@ -129,9 +133,10 @@ code {
     font-size: 0.8em;
     background: #272822;
     color: #388659;
-    padding: 7px;
-    margin: 5px;
-    border-radius: 2px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.619);
+    padding: 2px;
+    margin: 1px;
+    border-radius: 1px;
 }
 
 button,
@@ -157,13 +162,18 @@ button {
     text-align: center;
     color: #ffffff;
     background-color: #FF8427;
-    box-shadow: 5;
+    transition: all 0.4s ease-in-out;
 }
 
 button:hover {
+    border: solid;
+    border-radius: 0;
+    color: #ff8427;
+    border-color: #FF8427;
     cursor: pointer;
-    background-color: #FF8427;
-    opacity: 0.5;
+    background-color: #ff852700;
+    box-shadow: 0 0 7px #FF8427;
+    transition: all 0.4s ease-in-out;
 }
 
 ul {
