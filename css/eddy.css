@@ -125,10 +125,13 @@ blockquote {
 }
 
 code {
+    font-family: MonospaceNeonLight;
+    font-size: 0.8em;
     background: #272822;
     color: #388659;
-    padding: 5px;
-    border-radius: 6px;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 2.5px;
 }
 
 button,
@@ -336,10 +339,9 @@ strong {
    * 2. Correct the odd `em` font sizing in all browsers.
    */
 
-code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: monospace;
     /* 1 */
     font-size: 1em;
     /* 2 */
