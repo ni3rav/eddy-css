@@ -31,5 +31,3 @@
 
 - The micro-library is licensed under the MIT license.
 - Refer to the LICENSE file for more details.
-
-This adjustment reflects the terminology change from "framework" to "micro-library." If you have any more questions or if there's anything else you'd like to modify, feel free to let me know!
