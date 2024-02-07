@@ -301,7 +301,7 @@ pre {
 
 a {
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:link {
