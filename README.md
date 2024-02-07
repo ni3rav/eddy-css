@@ -11,10 +11,12 @@
 
 ### ⚡️ Installation:
 
-- Download the initial release (eddy-css-initial-release.zip) from the "releases" section.
-- Extract the downloaded file on your machine.
-- Link the `./css/eddy-min.css` file to your HTML file.
-- The micro-library is expected to be available on a CDN soon for easier access.
+- paste either of the following code in the head section of your html file and you are good to go
+<code><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></code>
+<center>or</center>
+<code><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"></code>
+
+- alternatively you can clone the repo and link *./eddy-css/css/eddy-min.css* to your html file
 
 ### ⏩ Change Log:
 
