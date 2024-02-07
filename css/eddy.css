@@ -305,10 +305,12 @@ a {
 
 a:link {
     color: #FFC800;
+    text-decoration: none;
 }
 
 a:visited {
     color: #A44A3F;
+    text-decoration: none;
 }
 
 a:hover {

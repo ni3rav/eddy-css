@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+}
+
+.nav50 {
+    height: 99%;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.nlogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1%;
+    gap: 3%; 
+}
+
+.sauce {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 3%;
+    padding-right: 1%;
+}
+
+#logo {
+    height: 100%;
+    width: 10%;
+    margin-left: -1.9%;
+}
