@@ -1,4 +1,10 @@
-<hr>07th February:
+09th February:
+
+v1.0.2:
+
+- Revamped the website<hr>
+
+07th February:
 
 v1.0.2:
 

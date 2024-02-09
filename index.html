@@ -3,134 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/eddy.css">
-    <title>Demo</title>
+    <link rel="icon" type="image/x-icon" href="./images/eddyicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Eddy CSS</title>
   </head>
-  <body style="margin: 2rem">
-    <h3>Typography</h3>
 
-    <table>
-      <tr>
-        <th>Table has headings also</th>
-        <td>This is a table.</td>
-        <td>I kept the border very thin</td>
-      </tr>
-      <tr>
-        <th>Here is another one</th>
-        <td>I want it that way.</td>
-        <td>(Tell me why ain't nothing but a heartache.)</td>
-      </tr>
-    </table>
+  <body>
+    <div class="nav">
+      <div class="nlogo nav50">
+        <p>
+          <span style="font-weight: bolder; font-size: 1.8rem">eddy</span
+          ><span style="font-weight: lighter; font-size: 1.8rem">.css</span>
+        </p>
+      </div>
 
-    <p>
-      Oh hello there, thank you for coming here. I know this webpage looks
-      horrible but please bare with me, I promise (pinky promise) to update it
-      as I improve the eddy. Check out different stylings like:
-      <strong>strong</strong>, <b>bold</b>, <i>italic</i>,
-      <em>emphasize</em> and more are below. If you want to use this library for
-      yourself then check it out on my github
-      <a href="https://github.com/niiirav/eddy-css" target="_blank">here's</a> a
-      link.
-    </p>
-    <br />
+      <div class="sauce nav50">
+        <a href="https://github.com/niiirav/eddy-css" target="_blank">Github</a>
+        <a href="./demo.html" target="_blank">Example</a>
+      </div>
+    </div>
 
-    <blockquote>
-      "The HTML blockquote Element (or HTML Block Quotation Element) indicates
-      that the enclosed text is an extended quotation. Usually, this is rendered
-      visually by indentation, and below is a code tag.
-    </blockquote>
+    <div class="container">
+      <div class="hero">
+        <h1 style="text-align: center; display: flex; flex-wrap: wrap">
+          A CSS Microlibrary
+        </h1>
+        <p id="desc">
+          Elegentaly style your pages without <code>.classes</code> bloating
+          across all the browser (Thanks to Normalize.css)
+        </p>
+        <blockquote id="bqt">
+          &lt;link rel=&quot;stylesheet&quot;
+          href=&quot;https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css&quot;/&gt;
+        </blockquote>
+        <button id="copy" style="scale: 1.25; margin-top: 1%">Copy!</button>
+      </div>
+    </div>
 
-    <code> console.log("hello world") </code>
+    <footer class="foot">
+      <ul class="litag">
+        <li>Made by <a href="https://github.com/niiirav">Nirav Maheta</a></li>
+        <li>
+          Code Licensed
+          <a href="https://github.com/niiirav/eddy-css/blob/main/LICENSE"
+            >MIT</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/niiirav/eddy-css/blob/main/README.md"
+            >Credits</a
+          >
+        </li>
+      </ul>
+    </footer>
 
-    <hr />
-
-    <p>
-      Here's a horizontal rule and image because I don't know where else to put
-      them.
-    </p>
-    <img src="./example.bmp" alt="Example kitten" />
-    <hr />
-
-    <p>
-      This is a <button>button</button> or a more formal <button>OK</button>
-    </p>
-
-    <h1>Heading 1</h1>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h2>Heading 2</h2>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h3>Heading 3</h3>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h4>Heading 4</h4>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h5>Heading 5</h5>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h6>Heading 6</h6>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-    <br />
-    <hr />
-
-    <ul>
-      <li>Unordered list item 1</li>
-      <li>Unordered list item 2</li>
-      <li>Unordered list item 3</li>
-    </ul>
-
-    <ol>
-      <li>Ordered list item 1</li>
-      <li>Ordered list item 2</li>
-      <li>Ordered list item 3</li>
-    </ol>
-
-    <p>
-      Links with <code>mailto:</code>, <code>tel:</code>,
-      <code>sms:</code> addresses might be styled...
-    </p>
-    <address>
-      <a href="mailto:john.doe@example.com">john.doe@example.com</a><br />
-      <a href="tel:778-330-2389">778-330-2389</a><br />
-      <a href="sms:666-666-6666">666-666-6666</a><br />
-    </address>
+    <script>
+      document.getElementById("copy").addEventListener("click", function () {
+        var blockquoteContent = document.getElementById("bqt").innerText;
+        navigator.clipboard.writeText(blockquoteContent).then(
+          function () {
+            alert("Copied! :D");
+          },
+          function () {
+            alert("Unable to copy the content :/");
+          }
+        );
+      });
+    </script>
   </body>
 </html>

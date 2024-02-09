@@ -8,26 +8,80 @@
     height: 99%;
     width: 50%;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .nlogo {
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding-left: 1%;
     gap: 3%; 
 }
 
 .sauce {
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     gap: 3%;
     padding-right: 1%;
 }
 
 #logo {
-    height: 100%;
-    width: 10%;
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
     margin-left: -1.9%;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 60%;
+}
+
+#desc {
+    font-family: MonospaceNeonLight;
+    color: #ffffff86;
+    width: 80%;
+    text-align: center;
+    margin-top: -3.90%;
+}
+
+#bqt {
+    align-self: center;
+    font-size: 1em;
+    text-align: center;
+    max-width: 70%;
+    max-height: 10%;
+}
+
+.foot {
+    /* background-color: blue; */
+    width: 100%;
+    height: 10vh;
+    font-weight: lighter;
+    font-family: MonospaceNeonLight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.litag {
+    /* background-color: red; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
 }
