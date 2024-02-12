@@ -126,6 +126,12 @@ blockquote {
     margin-block: 2rem;
     padding: 0.4rem 0.8rem;
     font-style: italic;
+    border: solid;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left-width: 0.4rem;
+    border-left-color: #00fffbce;
 }
 
 code {
@@ -158,7 +164,7 @@ button {
     border: none;
     height: 3em;
     width: 8em;
-    border-radius: 3%;
+    border-radius: 0.25em;
     text-align: center;
     color: #ffffff;
     background-color: #FF8427;
@@ -166,13 +172,11 @@ button {
 }
 
 button:hover {
-    /* border: solid; */
-    /* border-radius: 0; */
-    color: #ff8427;
-    /* border-color: #FF8427; */
+    color: #30323D;
     cursor: pointer;
-    background-color: #ff852700;
-    box-shadow: 0 0 10px #FF8427;
+    font-weight: bold;
+    background-color: #fa9549;
+    box-shadow: 0 0 0.65em #ff852769;
     transition: all 0.4s ease-in-out;
 }
 
@@ -512,4 +516,43 @@ template {
 
 [hidden] {
     display: none;
+}
+
+/* <------------------------------Styling Form components ------------------------------> */
+
+
+
+input[type="text"],
+input[type="password"] {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.20rem;
+    color: #ffffff;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 0.1rem;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 0.90rem;
+    font-weight: lighter;
+    text-align: center;
+    opacity: 0.3;
+    color: #ffffff;
+}
+
+textarea {
+    display: block;
+    background-color: #ffffff00;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+select {
+    border: solid 0.01rem;
+    color: #ffffff;
+    background-color: #ffffff00;
 }
