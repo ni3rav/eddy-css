@@ -1,46 +1,40 @@
-@font-face {
-    font-family: MonospaceNeon;
-    src: url(../fonts/MonaspaceNeon-Regular.woff);
-}
+/* eddy.css v2.0
+==============
+* a minimal css theme 
+* Project: https://github.com/niiirav/eddy-css
+* A fork of sakura.css: https://github.com/oxalorg/sakura/
+ */
 
-@font-face {
-    font-family: MonospaceNeonBold;
-    src: url(../fonts/MonaspaceNeon-Bold.woff);
-}
 
-@font-face {
-    font-family: MonospaceNeonLight;
-    src: url(../fonts/MonaspaceNeon-Light.woff);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* body  */
+* {
+    font-family: "Poppins", sans-serif;
 }
 
 html {
-    font-family: MonospaceNeon;
-    color: #ffffff;
-    line-height: 1.15;
-    /* 1. Correct the line height in all browsers. */
-    -webkit-text-size-adjust: 100%;
-    /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-    background-color: #30323D;
+    font-size: 62.5%;
 }
 
 body {
-    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.618;
+    color: #292626;
+    background-color: #dfdfdf;
 }
 
-b,
-strong {
-    font-family: MonospaceNeonBold;
+@media (max-width: 684px) {
+    body {
+        font-size: 1.53rem;
+    }
 }
 
-i,
-em {
-    font-family: MonospaceNeonLight;
+@media (max-width: 382px) {
+    body {
+        font-size: 1.35rem;
+    }
 }
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
 
 h1,
 h2,
@@ -48,511 +42,232 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0.67em 0;
-    font-weight: bolder;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2.35em;
 }
 
 h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2.5em;
-}
-
-h4 {
     font-size: 2em;
 }
 
-h5 {
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
     font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
 }
 
 h6 {
     font-size: 1em;
 }
 
-/*
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   
-*/
-
-/* Format tables taken from simple.css*/
-table {
-    border-collapse: collapse;
-    border: solid 1px;
-    margin: 1.5rem 0;
+p {
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
 }
 
+small,
+sub,
+sup {
+    font-size: 75%;
+}
 
-figure>table {
-    width: max-content;
+hr {
+    border-color: #2f0383;
+}
+
+a {
+    text-decoration: none;
+    color: #1831c0;
+}
+
+a:hover {
+    color: #5968c3;
+}
+
+ul {
+    padding-left: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+}
+
+li {
+    margin-bottom: 0.4em;
+}
+
+blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 0.8em;
+    border-left: 5px solid #007f96;
+    margin-bottom: 2.5rem;
+    background-color: #afafaf;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+    font-size: 0.9em;
+}
+
+code,
+kbd,
+samp {
+    font-size: 0.9em;
+    padding: 0 0.5em;
+    background-color: #323030;
+    color: rgb(125, 129, 39);
+    white-space: pre-wrap;
+}
+
+pre>code {
+    padding: 0;
+    background-color: transparent;
+    white-space: pre;
+    font-size: 1em;
+}
+
+/* Tables */
+table {
+    text-align: justify;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
 td,
 th {
-    border-collapse: collapse;
-    border: 1px solid #ffffff;
-    text-align: start;
-    padding: 0.5rem;
+    padding: 0.5em;
+    border-bottom: 1px solid #151515;
 }
 
-th {
-    font-family: MonospaceNeonBold;
-    border-collapse: collapse;
-    background-color: var(--accent-bg);
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    /* Set every other cell slightly darker. Improves readability. */
-    background-color: var(--accent-bg);
-}
-
-table caption {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-/* blockquote styling from simple.css */
-blockquote {
-    margin-inline-start: 2rem;
-    margin-inline-end: 0;
-    margin-block: 2rem;
-    padding: 0.4rem 0.8rem;
-    font-style: italic;
-    border: solid;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    border-left-width: 0.4rem;
-    border-left-color: #00fffbce;
-}
-
-code {
-    font-family: MonospaceNeonLight;
-    font-size: 0.8em;
-    background: #272822;
-    color: #388659;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.619);
-    padding: 2px;
-    margin: 1px;
-    border-radius: 1px;
-}
-
-button,
 input,
-optgroup,
-select,
 textarea {
-    font-family: inherit;
-    /* 1 */
-    font-size: 100%;
-    /* 1 */
-    line-height: 1.15;
-    /* 1 */
-    margin: 0;
-    /* 2 */
+    border: 1px solid #4a4a4a;
 }
 
-button {
-    border: none;
-    height: 3em;
-    width: 8em;
-    border-radius: 0.25em;
+input:focus,
+textarea:focus {
+    border: 1px solid #1d7484;
+}
+
+textarea {
+    width: 100%;
+}
+
+.button,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=file]::file-selector-button {
+    display: inline-block;
+    padding: 5px 10px;
     text-align: center;
-    color: #ffffff;
-    background-color: #FF8427;
-    transition: all 0.4s ease-in-out;
-}
-
-button:hover {
-    color: #30323D;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #1d7484;
+    color: #f9f9f9;
+    border-radius: 1px;
+    border: 1px solid #1d7484;
     cursor: pointer;
-    font-weight: bold;
-    background-color: #fa9549;
-    box-shadow: 0 0 0.65em #ff852769;
-    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
 }
 
-ul {
-    list-style-type: square;
+.button[disabled],
+button[disabled],
+input[type=submit][disabled],
+input[type=reset][disabled],
+input[type=button][disabled],
+input[type=file]::file-selector-button[disabled] {
+    cursor: default;
+    opacity: 0.5;
 }
 
-/**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-
-hr {
-    box-sizing: content-box;
-    /* 1 */
-    height: 0;
-    /* 1 */
-    overflow: visible;
-    /* 2 */
-    background-color: #ffffff;
+.button:hover,
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+input[type=file]::file-selector-button:hover {
+    background-color: #982c61;
+    color: #f9f9f9;
+    outline: 0;
 }
 
-
-
-th {
-    font-weight: bolder;
+.button:focus-visible,
+button:focus-visible,
+input[type=submit]:focus-visible,
+input[type=reset]:focus-visible,
+input[type=button]:focus-visible,
+input[type=file]::file-selector-button:focus-visible {
+    outline-style: solid;
+    outline-width: 2px;
 }
 
-td {
-    font-weight: lighter;
-
-}
-
-/**
-   * Render the `main` element consistently in IE.
-   */
-
-main {
-    display: block;
-}
-
-/**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
-
-button,
+textarea,
+select,
 input {
-    /* 1 */
-    overflow: visible;
+    color: #4a4a4a;
+    padding: 6px 10px;
+    /* The 6px vertically centers text on FF, ignored by Webkit */
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
 }
 
-/**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-
-button,
-select {
-    /* 1 */
-    text-transform: none;
+textarea:focus,
+select:focus,
+input:focus {
+    border: 1px solid #1d4684;
+    outline: 0;
 }
 
-/**
-      * Remove the inner border and padding in Firefox.
-      */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
+input[type=checkbox]:focus {
+    outline: 1px dotted #1d4684;
 }
 
-/**
-   * Restore the focus styles unset by the previous rule.
-   */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-}
-
-/**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-/**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    /* 1 */
-    font: inherit;
-    /* 2 */
-}
-
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-
-pre {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: 1em;
-    /* 2 */
-}
-
-/* Text-level semantics
-     ========================================================================== */
-
-/**
-   * Remove the gray background on active links in IE 10.
-   */
-
-a {
-    background-color: transparent;
-    text-decoration: none !important;
-}
-
-a:link {
-    color: #FFC800;
-    text-decoration: none !important;
-}
-
-a:visited {
-    color: #A44A3F;
-    text-decoration: none !important;
-}
-
-a:hover {
-    color: #FCFC62;
-    text-decoration: none !important;
-}
-
-a:active {
-    color: #E8C547;
-    text-decoration: none !important;
-}
-
-/**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-
-abbr[title] {
-    border-bottom: none;
-    /* 1 */
-    text-decoration: underline;
-    /* 2 */
-    text-decoration: underline dotted;
-    /* 2 */
-}
-
-/**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-
-b,
-strong {
-    font-weight: bolder;
-}
-
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-
-kbd,
-samp {
-    font-family: monospace;
-    /* 1 */
-    font-size: 1em;
-    /* 2 */
-}
-
-/**
-   * Add the correct font size in all browsers.
-   */
-
-small {
-    font-size: 80%;
-}
-
-/**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
-}
-
-/* Embedded content
-     ========================================================================== */
-
-/**
-   * Remove the border on images inside links in IE 10.
-   */
-
-img {
-    border-style: none;
-}
-
-/* Forms
-     ========================================================================== */
-
-/**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
-/**
-   * Correct the padding in Firefox.
-   */
-
+label,
+legend,
 fieldset {
-    padding: 0.35em 0.75em 0.625em;
-}
-
-/**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
-
-legend {
-    box-sizing: border-box;
-    /* 1 */
-    color: inherit;
-    /* 2 */
-    display: table;
-    /* 1 */
-    max-width: 100%;
-    /* 1 */
-    padding: 0;
-    /* 3 */
-    white-space: normal;
-    /* 1 */
-}
-
-/**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-
-progress {
-    vertical-align: baseline;
-}
-
-/**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-
-textarea {
-    overflow: auto;
-}
-
-/**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-
-[type="checkbox"],
-[type="radio"] {
-    box-sizing: border-box;
-    /* 1 */
-    padding: 0;
-    /* 2 */
-}
-
-/**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-
-[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-
-/* Interactive
-     ========================================================================== */
-
-/*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
-
-details {
     display: block;
-}
-
-/*
-   * Add the correct display in all browsers.
-   */
-
-summary {
-    display: list-item;
-}
-
-
-/* Misc
-     ========================================================================== */
-
-/**
-   * Add the correct display in IE 10+.
-   */
-
-template {
-    display: none;
-}
-
-/**
-   * Add the correct display in IE 10.
-   */
-
-[hidden] {
-    display: none;
-}
-
-/* <------------------------------Styling Form components ------------------------------> */
-
-
-
-input[type="text"],
-input[type="password"] {
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 1.20rem;
-    color: #ffffff;
-    text-align: center;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 0.1rem;
-    outline: none;
-}
-
-input::placeholder {
-    font-size: 0.90rem;
-    font-weight: lighter;
-    text-align: center;
-    opacity: 0.3;
-    color: #ffffff;
-}
-
-textarea {
-    display: block;
-    background-color: #ffffff00;
-    outline: none;
-    color: #ffffff;
-    font-size: 0.8rem;
-}
-
-select {
-    border: solid 0.01rem;
-    color: #ffffff;
-    background-color: #ffffff00;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }

@@ -2,16 +2,10 @@
 
 <hr>
 
-### ✨ Features:
+### The idea behind this:
 
-1. **Written in Vanilla CSS:**
-   - The micro-library is developed using pure CSS without any preprocessors like Sass or Less.
-
-2. **No Class Bloating:**
-   - The micro-library aims to avoid unnecessary class bloat, promoting a clean and minimal approach to styling.
-
-3. **Consistent Rendering in All Browsers:**
-   - Normalize.css is used to ensure consistent rendering across various browsers, enhancing cross-browser compatibility.
+- eddy.css is a fork of sakura.css with some changes
+- i loved this theme so i thought to just push it as a micro-library so that it will be easier for me to maintain and maybe someone else could use it too (if they like it)
 
 ### ⚡️ Installation:
 
@@ -24,9 +18,7 @@
 
 ### 🙏 Credits:
 
-- <a link="https://github.com/necolas/normalize.css/"> Normalize.css </a> for the base code
-- <a link="https://github.com/kevquirk/simple.css"> Simple.css</a> for table's styling
-- <a link="https://github.com/githubnext/monaspace"> GithubNext </a> for MonospaceNeon fonts 
+- <a link="https://github.com/oxalorg/sakura/"> sakura.css </a> for the base code
 
 ### 📄 License:
 

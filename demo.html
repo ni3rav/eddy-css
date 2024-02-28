@@ -1,122 +1,184 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/eddy.css">
-    <title>Demo</title>
-  </head>
-  <body style="margin: 2rem">
-    <h3>Typography</h3>
+<html lang='en'>
 
-    <table>
-      <tr>
-        <th>Table has headings also</th>
-        <td>This is a table.</td>
-        <td>I kept the border very thin</td>
-      </tr>
-      <tr>
-        <th>Here is another one</th>
-        <td>I want it that way.</td>
-        <td>(Tell me why ain't nothing but a heartache.)</td>
-      </tr>
-    </table>
+<head>
+  <title>Example</title>
+
+  <link rel="stylesheet" href="./css/eddy.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+</head>
+
+<body>
+  <main>
+    <h1><a href="/">eddy.css</a></h1>
+    <p>This webpage demonstrates all the styles provided by eddy.css</p>
 
     <p>
-      Oh hello there, thank you for coming here. I know this webpage looks
-      horrible but please bare with me, I promise (pinky promise) to update it
-      as I improve the eddy. Check out different stylings like:
-      <strong>strong</strong>, <b>bold</b>, <i>italic</i>,
-      <em>emphasize</em> and more are below. If you want to use this library for
-      yourself then check it out on my github
-      <a href="https://github.com/niiirav/eddy-css" target="_blank">here's</a> a
-      link.
+      <a href="/">Get back to homepage</a>
     </p>
-    <br />
 
-    <blockquote>
-      "The HTML blockquote Element (or HTML Block Quotation Element) indicates
-      that the enclosed text is an extended quotation. Usually, this is rendered
-      visually by indentation, and below is a code tag.
-    </blockquote>
-
-    <code> console.log("hello world") </code>
-
-    <hr />
-
+    <h2>How do I get eddy on my site?</h2>
     <p>
-      Here's a horizontal rule and image because I don't know where else to put
-      them.
+      Paste into your website's &lt;head&gt; <a href="snippet.txt">this snippet</a>.
     </p>
-    <img src="./example.bmp" alt="Example kitten" />
-    <hr />
 
+
+    <h2>Why use eddy.css?</h2>
+    <ul>
+      <li>Responsive</li>
+      <li>Good browser support</li>
+      <li>Beautiful</li>
+      <li>Small size (&lt; 10 kb) - you don't waste bytes on every widget imaginable</li>
+      <li>No learning curve - use HTML as you would normally instead of going to the docs to learn which class does
+        what and having to fight the framework otherwise.</li>
+    </ul>
+
+    <h2>Is it responsive?</h2>
+    <p>
+      <strong>Heck yeah!</strong> It doesn't include any fancy styles so it's easily mobile responsive.
+      Just add the famous <a href='https://www.w3schools.com/css/css_rwd_viewport.asp'>responsive viewport tag</a> and
+      you'll be good to go!
+    </p>
+    <p>
+      In fact, try resizing this page. Everything flows super nicely as you'll see.
+    </p>
+
+    <h2>Element demos</h2>
+    <p>
+      This is supposed to be a demo page so we need more elements!
+    </p>
+
+    <h3>Form elements</h3>
+    <form onsubmit="return false;">
+      <label for='email'>Email</label>
+      <input type='email' name='email' id='email' placeholder='john.doe@gmail.com'>
+
+      <label for='id'>User id (read only)</label>
+      <input readonly name='id' id='id' value='04D6H89Z'>
+
+      <label for='disabled'>Random disabled input</label>
+      <input disabled name='disabled' id='disabled' placeholder='Because why not?'>
+
+      <label for='about'>About me</label>
+      <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
+
+      <label>Choose a radio:</label>
+      <div>
+        <input type='radio' id='john' name='drone' value='john' checked>
+        <label for='john'>John Doe</label>
+      </div>
+      <div>
+        <input type='radio' id='jane' name='drone' value='jane' checked>
+        <label for='jane'>Jane Doe</label>
+      </div>
+      <div>
+        <input type='radio' id='johnny' name='drone' value='johnny' checked>
+        <label for='johnny'>Johnny Doe</label>
+      </div>
+
+      <br>
+
+      <label>Checkboxes</label>
+      <div>
+        <input type='checkbox' name='unchecked' id='unchecked'>
+        <label for='unchecked'>Unchecked</label>
+        <input type='checkbox' name='remember' id='remember' checked>
+        <label for='remember'>Remember me</label>
+      </div>
+
+      <input type='submit'>
+    </form>
+
+    <h3>Code</h3>
+    <p>
+      Below is some code, you can copy it with <kbd>Ctrl-C</kbd>.
+      Did you know, <code>alert(1)</code> can show an alert in JavaScript!
+    </p>
+    <pre><code>// This logs a message to the console<br>console.log('Hello, world!')</code></pre>
+
+    <h3>Other</h3>
+    <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
+    <img src='./example.bmp' alt='Example kitten'>
+    <hr>
+
+        
     <p>
       This is a <button>button</button> or a more formal <button>OK</button>
     </p>
+    <blockquote>This is a blockquote</blockquote>
+    <pre>
+      Good old preformatted text, no code at all
+      
+       |\_/|        ****************************    (\_/)
+      / @ @ \       *  "Purrrfectly pleasant"  *   (='.'=)
+     ( > º < )      *       Poppy Prinz        *   (")_(")
+      `>>x<<´       *   (pprinz@example.com)   *
+      /  O  \       ****************************
+     
+    </pre>
 
-    <h1>Heading 1</h1>
+    <p>And here's a nicely marked up table!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>2</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Mozilla</td>
+          <td>10</td>
+          <td>$100,000.00</td>
+        </tr>
+        <tr>
+          <td>Quesadilla</td>
+          <td>1</td>
+          <td>$2.22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Typography</h3>
     <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, quis ullamcorper sem
+      congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit. Duis ornare accumsan egestas. Proin
+      maximus lacus interdum leo molestie convallis. Orci varius natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Ut iaculis risus eu felis feugiat, eu mollis neque elementum. Donec interdum, nisl id
+      dignissim iaculis, felis dui aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos.
+      <strong>This is strong,</strong> this is normal, <b>this is just bold,</b> <em>and this is emphasized!</em> And
+      heck, <a href='/'>here</a>'s a link.
     </p>
 
-    <h2>Heading 2</h2>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
+    <blockquote cite='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote'>
+      "The HTML blockquote Element (or HTML Block Quotation Element) indicates
+      that the enclosed text is an extended quotation. Usually, this is
+      rendered visually by indentation (see
+      <a
+        href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes'>Notes</a>
+      for how to change it). A URL for the source of the quotation may be given using the
+      <code>cite</code> attribute, while a text representation of the source
+      can be given using the <code>&ltcite&gt</code> cite element."
 
-    <h3>Heading 3</h3>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h4>Heading 4</h4>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h5>Heading 5</h5>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-
-    <h6>Heading 6</h6>
-    <p>
-      A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading.
-      Cascading Style Sheets (CSS) is a style sheet language used for describing
-      the presentation of a document written in a markup language like HTML. CSS
-      is a cornerstone technology of the World Wide Web, alongside HTML and
-      JavaScript.
-    </p>
-    <br />
-    <hr />
+      <footer>
+        <cite>MDN, "The Block Quotation element"</cite>
+      </footer>
+    </blockquote>
 
     <ul>
       <li>Unordered list item 1</li>
       <li>Unordered list item 2</li>
       <li>Unordered list item 3</li>
     </ul>
-
     <ol>
       <li>Ordered list item 1</li>
       <li>Ordered list item 2</li>
@@ -124,13 +186,33 @@
     </ol>
 
     <p>
-      Links with <code>mailto:</code>, <code>tel:</code>,
-      <code>sms:</code> addresses might be styled...
+      Links with <code>mailto:</code>, <code>tel:</code>, <code>sms:</code> addresses might be styled...
     </p>
     <address>
-      <a href="mailto:john.doe@example.com">john.doe@example.com</a><br />
-      <a href="tel:778-330-2389">778-330-2389</a><br />
-      <a href="sms:666-666-6666">666-666-6666</a><br />
+      <a href='mailto:john.doe@example.com'>john.doe@example.com</a><br />
+      <a href='tel:778-330-2389'>778-330-2389</a><br />
+      <a href='sms:666-666-6666'>666-666-6666</a><br />
     </address>
-  </body>
+
+    <h1>Heading 1</h1>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h2>Heading 2</h2>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h3>Heading 3</h3>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h4>Heading 4</h4>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h5>Heading 5</h5>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h6>Heading 6</h6>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+  </main>
+</body>
+
 </html>

@@ -1,3 +1,9 @@
+28th February:
+
+v2.0.0:
+
+- completely revamped it and made it as minimal as possible (thanks to sakura.css)
+
 09th February:
 
 v1.0.2:
