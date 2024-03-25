@@ -1,1 +1,1 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/niiirav/eddy-css@main/css/eddy.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ni3rav/eddy-css@main/css/eddy.min.css"/>
